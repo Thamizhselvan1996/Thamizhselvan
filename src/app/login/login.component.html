@@ -1,0 +1,34 @@
+<mat-toolbar color="primary" class="navbar">
+  <div>
+    <mat-icon>home</mat-icon>Home
+  </div>
+
+  <div>
+    <span mat-button>Service</span>
+    <span mat-button>About</span>
+    <span mat-button>Contact</span>
+    <span mat-button color="accent">SignUp</span>
+  </div>
+
+
+</mat-toolbar>
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary">Login Page</mat-toolbar>
+
+    <div fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="username" placeholder="username">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="password" placeholder="Password">
+      </mat-form-field>
+      
+      <button mat-raised-button color="primary" (click)="loginUser()">Login</button>
+    </div>
+  </mat-card>
+</div>
